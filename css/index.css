@@ -61,35 +61,40 @@ main {
   background: linear-gradient(#4190c4, rgba(0, 0, 0, 1));
 }
 
+header {
+  height: 300px;
+  display: flex;
+}
+
 .shallow-body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 300px;
 }
 
 @media (min-width: 540px) {
   .shallow-body {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .deep-body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 400px;
+  grid-auto-rows: 300px;
 }
 
 @media (min-width: 540px) {
   .deep-body {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* .fish-container {
+.fish-container {
   border: red solid;
-} */
+}
 
 /* - - - - - - - DROP DOWN MENU - - - - - - -  */
 
@@ -162,7 +167,7 @@ main {
   width: 35%;
 }
 
-.clown {
+.clown-photo {
   background: url("https://as2.ftcdn.net/jpg/03/16/44/65/500_F_316446573_jTwGJQWLOnRK71QXwKrEkYX8Cql97pQh.jpg");
   background-size: cover;
   background-position: center;
@@ -192,9 +197,9 @@ main {
 }
 
 .blue-whale-photo {
-  display: block;
-  width: 100%;
-  height: auto;
+  background: url("https://as2.ftcdn.net/jpg/02/04/55/51/500_F_204555192_HJSMbvWq0YkhKKUeZngxXmpvGqCX5kEC.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /* - - - - - - - ASIDE 1 - - - - - - - -  */
@@ -221,8 +226,8 @@ main {
 
 .info-content {
   background-color: rgba(0, 0, 0, 0.75);
-  width: 50%;
-  height: 50%;
+  width: 75%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -235,6 +240,7 @@ main {
 
 .info-content p {
   text-align: left;
+  font-size: 14px;
   margin: 0 20px 20px 20px;
 }
 

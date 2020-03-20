@@ -21,20 +21,20 @@ window.onclick = function(event) {
 
 const menuController = document.querySelector("#clown-click");
 menuController.addEventListener("click", function() {
-  document.querySelector(".info").classList.toggle("info-open");
+  document.querySelector(".clown").classList.toggle("info-open");
 });
 
 document.querySelector(".info-close").addEventListener("click", function() {
-  document.querySelector(".info").classList.remove("info-open");
+  document.querySelector(".clown").classList.remove("info-open");
 });
 
 // /* - - - - - - - BLUE WHALE ASIDE - - - - - - - -  */
 
 const menuController2 = document.querySelector("#blue-whale-click");
 menuController2.addEventListener("click", function() {
-  document.querySelector(".info").classList.toggle("info-open");
+  document.querySelector(".blue-whale").classList.toggle("info-open");
 });
 
 document.querySelector(".info-close").addEventListener("click", function() {
-  document.querySelector(".info").classList.remove("info-open");
+  document.querySelector(".blue-whale").classList.remove("info-open");
 });
