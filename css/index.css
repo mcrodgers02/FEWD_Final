@@ -37,7 +37,7 @@ body {
   color: #142b58;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 600px) {
   .nav a {
     display: inline;
   }
@@ -49,7 +49,7 @@ body {
   margin-right: 21px;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 600px) {
   .nav img {
     display: none;
   }
@@ -61,39 +61,57 @@ main {
   background: linear-gradient(#4190c4, rgba(0, 0, 0, 1));
 }
 
-header {
-  height: 300px;
+.hero-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: white;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  text-align: center;
+  margin: -6px auto;
+}
+
+@media (min-width: 600px) {
+  .hero-text h1 {
+    font-size: 80px;
+  }
+}
+
+.hero-text p {
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .hero-text p {
+    font-size: 18px;
+  }
 }
 
 .shallow-body {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 300px;
-}
-
-@media (min-width: 540px) {
-  .shallow-body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  height: 400px;
+  padding: 50px;
+  border: 1px solid green;
 }
 
 .deep-body {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 300px;
-}
-
-@media (min-width: 540px) {
-  .deep-body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.fish-container {
-  border: red solid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 50px;
+  border: 1px solid yellow;
 }
 
 /* - - - - - - - DROP DOWN MENU - - - - - - -  */
@@ -136,21 +154,13 @@ header {
   display: block;
 }
 
-/* - - - - - - - ALL FISH - - - - - - - -  */
-
-.fish-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* - - - - - - - CLOWN FISH - - - - - - - -  */
 
 .clown-vector {
   display: block;
   opacity: 0.25;
-  width: 30%;
   animation: bounce 3s infinite alternate;
+  width: 10%;
 }
 
 @keyframes bounce {
@@ -164,11 +174,38 @@ header {
 
 .clown-vector:hover {
   opacity: 1;
-  width: 35%;
 }
 
 .clown-photo {
   background: url("https://as2.ftcdn.net/jpg/03/16/44/65/500_F_316446573_jTwGJQWLOnRK71QXwKrEkYX8Cql97pQh.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* - - - - - - - STAR FISH - - - - - - - -  */
+
+.star-vector {
+  display: block;
+  opacity: 0.25;
+  width: 15%;
+  animation: bounce 3s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(25px);
+  }
+  to {
+    transform: translateY(-25px);
+  }
+}
+
+.star-vector:hover {
+  opacity: 1;
+}
+
+.star-photo {
+  background: url("https://as2.ftcdn.net/jpg/02/13/70/69/500_F_213706998_hHBDkj9RY8lIjNn9cDgeOf8SdbDBtpFR.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -178,7 +215,7 @@ header {
 .blue-whale-vector {
   display: block;
   opacity: 0.25;
-  width: 60%;
+  width: 50%;
   animation: bounce 3s infinite alternate;
 }
 
@@ -193,11 +230,38 @@ header {
 
 .blue-whale-vector:hover {
   opacity: 1;
-  width: 65%;
 }
 
 .blue-whale-photo {
   background: url("https://as2.ftcdn.net/jpg/02/04/55/51/500_F_204555192_HJSMbvWq0YkhKKUeZngxXmpvGqCX5kEC.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* - - - - - - - SQUID - - - - - - - -  */
+
+.squid-vector {
+  display: block;
+  opacity: 0.25;
+  width: 25%;
+  animation: bounce 3s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(25px);
+  }
+  to {
+    transform: translateY(-25px);
+  }
+}
+
+.squid-vector:hover {
+  opacity: 1;
+}
+
+.squid-photo {
+  background: url("https://as1.ftcdn.net/jpg/02/19/61/88/500_F_219618860_9O01L4U7sTUuWSjjNt38wudML2jNmWFm.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -207,6 +271,7 @@ header {
 .info-control {
   fill: #fff;
   margin: 25px;
+  border: 1px solid red;
 }
 
 .info {
