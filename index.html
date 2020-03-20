@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fish Finder</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="https://oceana.org/" target="_blank"
+          ><img
+            src="https://oceana.org/sites/all/themes/oceana/images/logo_en.png"
+            alt="Oceana - Protecting the World's Oceans"
+        /></a>
+      </div>
+      <nav class="nav">
+        <a href="https://oceana.org/what-we-do" target="_blank">What We Do</a>
+        <a href="https://oceana.org/take-action" target="_blank">Take Action</a>
+        <div class="dropdown">
+          <img
+            class="dropbtn"
+            src="images/icons/open-menu.svg"
+            onclick="myFunction()"
+            alt="Menu Button"
+          />
+          <div id="myDropdown" class="dropdown-content">
+            <a href="https://oceana.org/what-we-do" target="_blank"
+              >What We Do</a
+            >
+            <a href="https://oceana.org/take-action" target="_blank"
+              >Take Action</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="shallow-body">
+        <div class="fish-container">
+          <img
+            id="clown-click"
+            class="clown-vector info-control"
+            src="images/vector/ClownFish.svg"
+            alt="Clown Fish"
+          />
+        </div>
+        <div class="fish-container"></div>
+        <div class="fish-container"></div>
+        <div class="fish-container"></div>
+        <div class="fish-container"></div>
+        <div class="fish-container"></div>
+      </section>
+      <section class="deep-body">
+        <div class="fish-container"></div>
+        <div class="fish-container">
+          <img
+            id="blue-whale-click"
+            class="blue-whale-vector info-control"
+            src="images/vector/BlueWhale.svg"
+            alt="Blue Whale"
+          />
+        </div>
+        <div class="fish-container"></div>
+        <div class="fish-container"></div>
+        <div class="fish-container"></div>
+        <div class="fish-container"></div>
+      </section>
+      <aside class="info">
+        <div class="info-content">
+          <img class="info-close" src="images/icons/close.svg" alt="" />
+          <div class="fish-photo clown"></div>
+          <h1>Clownfish</h1>
+          <p>
+            Clownfish or anemonefish are fishes from the subfamily
+            Amphiprioninae in the family Pomacentridae. Thirty species are
+            recognized: one in the genus Premnas, while the remaining are in the
+            genus Amphiprion. In the wild, they all form symbiotic mutualisms
+            with sea anemones.
+          </p>
+        </div>
+      </aside>
+    </main>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

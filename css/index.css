@@ -1,0 +1,266 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+}
+
+.logo img {
+  height: 30px;
+  display: block;
+  margin-left: 21px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  margin-right: 21px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #20a2e5;
+  display: none;
+}
+
+.nav a:hover {
+  color: #142b58;
+}
+
+@media (min-width: 540px) {
+  .nav a {
+    display: inline;
+  }
+}
+
+.nav img {
+  height: 24px;
+  display: block;
+  margin-right: 21px;
+}
+
+@media (min-width: 540px) {
+  .nav img {
+    display: none;
+  }
+}
+
+/* - - - - - - - BODY - - - - - - -  */
+
+main {
+  background: linear-gradient(#4190c4, rgba(0, 0, 0, 1));
+}
+
+.shallow-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 400px;
+}
+
+@media (min-width: 540px) {
+  .shallow-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.deep-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 400px;
+}
+
+@media (min-width: 540px) {
+  .deep-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* .fish-container {
+  border: red solid;
+} */
+
+/* - - - - - - - DROP DOWN MENU - - - - - - -  */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn:hover {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 58px;
+  right: 0px;
+  background-color: #fff;
+  width: 130px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #20a2e5;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: #142b58;
+}
+
+.show {
+  display: block;
+}
+
+/* - - - - - - - ALL FISH - - - - - - - -  */
+
+.fish-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* - - - - - - - CLOWN FISH - - - - - - - -  */
+
+.clown-vector {
+  display: block;
+  opacity: 0.25;
+  width: 30%;
+  animation: bounce 3s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(25px);
+  }
+  to {
+    transform: translateY(-25px);
+  }
+}
+
+.clown-vector:hover {
+  opacity: 1;
+  width: 35%;
+}
+
+.clown {
+  background: url("https://as2.ftcdn.net/jpg/03/16/44/65/500_F_316446573_jTwGJQWLOnRK71QXwKrEkYX8Cql97pQh.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* - - - - - - - BLUE WHALE - - - - - - - -  */
+
+.blue-whale-vector {
+  display: block;
+  opacity: 0.25;
+  width: 60%;
+  animation: bounce 3s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(25px);
+  }
+  to {
+    transform: translateY(-25px);
+  }
+}
+
+.blue-whale-vector:hover {
+  opacity: 1;
+  width: 65%;
+}
+
+.blue-whale-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* - - - - - - - ASIDE 1 - - - - - - - -  */
+
+.info-control {
+  fill: #fff;
+  margin: 25px;
+}
+
+.info {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  position: fixed;
+  transition: all 0.35s ease-in-out;
+  transform: translateX(100%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-content {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.info-content h1 {
+  margin-top: 20px;
+}
+
+.info-content p {
+  text-align: left;
+  margin: 0 20px 20px 20px;
+}
+
+.fish-photo {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-open {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.info-close {
+  background-color: rgba(0, 0, 0, 0);
+  height: 15px;
+  position: absolute;
+  z-index: 20;
+  margin: 10px;
+  display: block;
+}
+
+.info-close:hover {
+  cursor: pointer;
+}
