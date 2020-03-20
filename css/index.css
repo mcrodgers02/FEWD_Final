@@ -89,7 +89,7 @@ main {
 }
 
 .hero-text p {
-  font-size: 11px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -104,14 +104,12 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   height: 400px;
   padding: 50px;
-  border: 1px solid green;
 }
 
 .deep-body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 50px;
-  border: 1px solid yellow;
 }
 
 /* - - - - - - - DROP DOWN MENU - - - - - - -  */
@@ -271,7 +269,6 @@ main {
 .info-control {
   fill: #fff;
   margin: 25px;
-  border: 1px solid red;
 }
 
 .info {
