@@ -13,9 +13,15 @@ body {
 }
 
 .logo img {
-  height: 30px;
+  height: 21px;
   display: block;
   margin-left: 21px;
+}
+
+@media (min-width: 600px) {
+  .logo img {
+    height: 30px;
+  }
 }
 
 .nav {
@@ -44,7 +50,7 @@ body {
 }
 
 .nav img {
-  height: 24px;
+  height: 21px;
   display: block;
   margin-right: 21px;
 }
@@ -101,7 +107,6 @@ main {
 
 .shallow-body {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   grid-template-columns: repeat(6, 14vw);
   grid-template-rows: repeat(18, 14vw);
   padding: 50px;
@@ -215,7 +220,7 @@ main {
   width: 100%;
   animation: bounce 3s infinite alternate;
   grid-column: 1 / 4;
-  grid-row: 6 / 8;
+  grid-row: 7 / 9;
 }
 
 @keyframes bounce {
@@ -245,7 +250,7 @@ main {
   width: 100%;
   animation: bounce 4s infinite alternate;
   grid-column: 2 / 6;
-  grid-row: 10 / 12;
+  grid-row: 11 / 13;
 }
 
 @keyframes bounce {
@@ -273,9 +278,9 @@ main {
   display: block;
   opacity: 0.25;
   height: 100%;
-  animation: skew 2s infinite alternate;
+  animation: skew 1s infinite alternate;
   grid-column: 4 / 5;
-  grid-row: 14 / 17;
+  grid-row: 15 / 18;
 }
 
 @keyframes skew {
