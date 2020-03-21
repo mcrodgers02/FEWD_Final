@@ -39,10 +39,21 @@ document.querySelector(".info-close").addEventListener("click", function() {
   document.querySelector(".star").classList.remove("info-open");
 });
 
+/* - - - - - - - SHARK ASIDE - - - - - - - -  */
+
+const menuController3 = document.querySelector("#shark-click");
+menuController3.addEventListener("click", function() {
+  document.querySelector(".shark").classList.toggle("info-open");
+});
+
+document.querySelector(".info-close").addEventListener("click", function() {
+  document.querySelector(".shark").classList.remove("info-open");
+});
+
 // /* - - - - - - - BLUE WHALE ASIDE - - - - - - - -  */
 
-const menuController3 = document.querySelector("#blue-whale-click");
-menuController3.addEventListener("click", function() {
+const menuController4 = document.querySelector("#blue-whale-click");
+menuController4.addEventListener("click", function() {
   document.querySelector(".blue-whale").classList.toggle("info-open");
 });
 
@@ -52,8 +63,8 @@ document.querySelector(".info-close").addEventListener("click", function() {
 
 // /* - - - - - - - SQUID ASIDE - - - - - - - -  */
 
-const menuController4 = document.querySelector("#squid-click");
-menuController4.addEventListener("click", function() {
+const menuController5 = document.querySelector("#squid-click");
+menuController5.addEventListener("click", function() {
   document.querySelector(".squid").classList.toggle("info-open");
 });
 

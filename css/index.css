@@ -65,7 +65,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 500px;
   color: white;
 }
 
@@ -101,14 +101,9 @@ main {
 
 .shallow-body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  height: 400px;
-  padding: 50px;
-}
-
-.deep-body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  grid-template-columns: repeat(6, 14vw);
+  grid-template-rows: repeat(18, 14vw);
   padding: 50px;
 }
 
@@ -157,16 +152,18 @@ main {
 .clown-vector {
   display: block;
   opacity: 0.25;
-  animation: bounce 3s infinite alternate;
-  width: 10%;
+  width: 70%;
+  animation: bounce 2s infinite alternate;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 @keyframes bounce {
-  from {
-    transform: translateY(25px);
+  0% {
+    transform: translateY(40px);
   }
-  to {
-    transform: translateY(-25px);
+  100% {
+    transform: translateY(-40px);
   }
 }
 
@@ -185,16 +182,18 @@ main {
 .star-vector {
   display: block;
   opacity: 0.25;
-  width: 15%;
-  animation: bounce 3s infinite alternate;
+  width: 75%;
+  animation: roll 3s infinite alternate;
+  grid-column: 5 / 6;
+  grid-row: 3 / 4;
 }
 
-@keyframes bounce {
-  from {
-    transform: translateY(25px);
+@keyframes roll {
+  0% {
+    transform: rotate(0);
   }
-  to {
-    transform: translateY(-25px);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -208,21 +207,53 @@ main {
   background-position: center;
 }
 
+/* - - - - - - - Great White Shark - - - - - - - -  */
+
+.shark-vector {
+  display: block;
+  opacity: 0.25;
+  width: 100%;
+  animation: bounce 3s infinite alternate;
+  grid-column: 1 / 4;
+  grid-row: 6 / 8;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
+
+.shark-vector:hover {
+  opacity: 1;
+}
+
+.shark-photo {
+  background: url("https://www.bostonmagazine.com/wp-content/uploads/sites/2/2019/05/Great-white-shark.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* - - - - - - - BLUE WHALE - - - - - - - -  */
 
 .blue-whale-vector {
   display: block;
   opacity: 0.25;
-  width: 50%;
-  animation: bounce 3s infinite alternate;
+  width: 100%;
+  animation: bounce 4s infinite alternate;
+  grid-column: 2 / 6;
+  grid-row: 10 / 12;
 }
 
 @keyframes bounce {
-  from {
-    transform: translateY(25px);
+  0% {
+    transform: translateY(10px);
   }
-  to {
-    transform: translateY(-25px);
+  100% {
+    transform: translateY(-10px);
   }
 }
 
@@ -241,16 +272,18 @@ main {
 .squid-vector {
   display: block;
   opacity: 0.25;
-  width: 25%;
-  animation: bounce 3s infinite alternate;
+  height: 100%;
+  animation: skew 2s infinite alternate;
+  grid-column: 4 / 5;
+  grid-row: 14 / 17;
 }
 
-@keyframes bounce {
-  from {
-    transform: translateY(25px);
+@keyframes skew {
+  0% {
+    transform: skewX(3deg);
   }
-  to {
-    transform: translateY(-25px);
+  100% {
+    transform: skewX(-3deg);
   }
 }
 
@@ -280,7 +313,7 @@ main {
   position: fixed;
   transition: all 0.35s ease-in-out;
   transform: translateX(100%);
-  z-index: 10;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
