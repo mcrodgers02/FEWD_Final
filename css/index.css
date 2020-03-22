@@ -70,9 +70,28 @@ main {
 .hero-container {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  min-height: 400px;
+  align-items: center;
+  height: 250px;
   color: white;
+  border: 1px solid red;
+}
+
+@media (min-width: 540px) {
+  .hero-container {
+    height: 400px;
+  }
+}
+
+@media (min-width: 960px) {
+  .hero-container {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-container {
+    height: 800px;
+  }
 }
 
 .hero-text {
