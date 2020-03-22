@@ -18,7 +18,7 @@ body {
   margin-left: 21px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 540px) {
   .logo img {
     height: 30px;
   }
@@ -43,7 +43,7 @@ body {
   color: #142b58;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 540px) {
   .nav a {
     display: inline;
   }
@@ -55,7 +55,7 @@ body {
   margin-right: 21px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 540px) {
   .nav img {
     display: none;
   }
@@ -70,8 +70,8 @@ main {
 .hero-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 500px;
+  align-items: flex-end;
+  min-height: 400px;
   color: white;
 }
 
@@ -83,26 +83,14 @@ main {
 }
 
 .hero-text h1 {
-  font-size: 48px;
+  font-size: 8vw;
   text-align: center;
-  margin: -6px auto;
-}
-
-@media (min-width: 600px) {
-  .hero-text h1 {
-    font-size: 80px;
-  }
+  margin: -1vh auto;
 }
 
 .hero-text p {
-  font-size: 10px;
+  font-size: 1.75vw;
   text-align: center;
-}
-
-@media (min-width: 600px) {
-  .hero-text p {
-    font-size: 18px;
-  }
 }
 
 .shallow-body {
@@ -158,9 +146,10 @@ main {
   display: block;
   opacity: 0.25;
   width: 70%;
+  cursor: pointer;
   animation: bounce 2s infinite alternate;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 }
 
 @keyframes bounce {
@@ -188,14 +177,21 @@ main {
   display: block;
   opacity: 0.25;
   width: 75%;
-  animation: roll 3s infinite alternate;
+  cursor: pointer;
+  animation: roll 3s infinite ease;
   grid-column: 5 / 6;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
 }
 
 @keyframes roll {
   0% {
     transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(370deg);
   }
   100% {
     transform: rotate(360deg);
@@ -218,17 +214,24 @@ main {
   display: block;
   opacity: 0.25;
   width: 100%;
-  animation: bounce 3s infinite alternate;
+  cursor: pointer;
+  animation: shake 3s infinite ease-out;
   grid-column: 1 / 4;
   grid-row: 7 / 9;
 }
 
-@keyframes bounce {
+@keyframes shake {
   0% {
-    transform: translateX(15px);
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25px);
+  }
+  75% {
+    transform: translateX(25px);
   }
   100% {
-    transform: translateX(-15px);
+    transform: translateX(0px);
   }
 }
 
@@ -248,6 +251,7 @@ main {
   display: block;
   opacity: 0.25;
   width: 100%;
+  cursor: pointer;
   animation: bounce 4s infinite alternate;
   grid-column: 2 / 6;
   grid-row: 11 / 13;
@@ -278,17 +282,24 @@ main {
   display: block;
   opacity: 0.25;
   height: 100%;
-  animation: skew 1s infinite alternate;
+  cursor: pointer;
+  animation: gelatine 2s infinite alternate;
   grid-column: 4 / 5;
   grid-row: 15 / 18;
 }
 
-@keyframes skew {
+@keyframes gelatine {
   0% {
-    transform: skewX(3deg);
+    transform: scale(1, 1);
   }
-  100% {
-    transform: skewX(-3deg);
+  25% {
+    transform: scale(0.95, 1.05);
+  }
+  50% {
+    transform: scale(1.05, 0.95);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
   }
 }
 
