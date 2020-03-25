@@ -17,62 +17,62 @@ window.onclick = function(event) {
   }
 };
 
-/* - - - - - - - CLOWN FISH ASIDE - - - - - - - -  */
+/* - - - - - - - CLOWN FISH MODAL - - - - - - - -  */
 
 const clownModal = document.querySelector("#clown-click");
 const clown = document.querySelector(".clown");
 clownModal.addEventListener("click", function() {
-  clown.classList.toggle("info-open");
+  clown.classList.toggle("modal-open");
 });
 
 document.querySelector(".clown-close").addEventListener("click", function() {
-  clown.classList.remove("info-open");
+  clown.classList.remove("modal-open");
 });
 
-/* - - - - - - - STAR FISH ASIDE - - - - - - - -  */
+/* - - - - - - - STAR FISH MODAL - - - - - - - -  */
 
 const starModal = document.querySelector("#star-click");
 const star = document.querySelector(".star");
 starModal.addEventListener("click", function() {
-  star.classList.toggle("info-open");
+  star.classList.toggle("modal-open");
 });
 
 document.querySelector(".star-close").addEventListener("click", function() {
-  star.classList.remove("info-open");
+  star.classList.remove("modal-open");
 });
 
-/* - - - - - - - SHARK ASIDE - - - - - - - -  */
+/* - - - - - - - SHARK MODAL - - - - - - - -  */
 
 const sharkModal = document.querySelector("#shark-click");
 const shark = document.querySelector(".shark");
 sharkModal.addEventListener("click", function() {
-  shark.classList.toggle("info-open");
+  shark.classList.toggle("modal-open");
 });
 
 document.querySelector(".shark-close").addEventListener("click", function() {
-  shark.classList.remove("info-open");
+  shark.classList.remove("modal-open");
 });
 
-// /* - - - - - - - BLUE WHALE ASIDE - - - - - - - -  */
+// /* - - - - - - - BLUE WHALE MODAL - - - - - - - -  */
 
 const blueModal = document.querySelector("#blue-whale-click");
 const blueWhale = document.querySelector(".blue-whale");
 blueModal.addEventListener("click", function() {
-  blueWhale.classList.toggle("info-open");
+  blueWhale.classList.toggle("modal-open");
 });
 
 document.querySelector(".whale-close").addEventListener("click", function() {
-  blueWhale.classList.remove("info-open");
+  blueWhale.classList.remove("modal-open");
 });
 
-// /* - - - - - - - SQUID ASIDE - - - - - - - -  */
+// /* - - - - - - - SQUID MODAL - - - - - - - -  */
 
 const squidModal = document.querySelector("#squid-click");
 const squid = document.querySelector(".squid");
 squidModal.addEventListener("click", function() {
-  squid.classList.toggle("info-open");
+  squid.classList.toggle("modal-open");
 });
 
 document.querySelector(".squid-close").addEventListener("click", function() {
-  squid.classList.remove("info-open");
+  squid.classList.remove("modal-open");
 });
