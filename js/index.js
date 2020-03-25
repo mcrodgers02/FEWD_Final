@@ -19,55 +19,60 @@ window.onclick = function(event) {
 
 /* - - - - - - - CLOWN FISH ASIDE - - - - - - - -  */
 
-const menuController = document.querySelector("#clown-click");
-menuController.addEventListener("click", function() {
-  document.querySelector(".clown").classList.toggle("info-open");
+const clownModal = document.querySelector("#clown-click");
+const clown = document.querySelector(".clown");
+clownModal.addEventListener("click", function() {
+  clown.classList.toggle("info-open");
 });
 
-document.querySelector(".info-close").addEventListener("click", function() {
-  document.querySelector(".clown").classList.remove("info-open");
+document.querySelector(".clown-close").addEventListener("click", function() {
+  clown.classList.remove("info-open");
 });
 
 /* - - - - - - - STAR FISH ASIDE - - - - - - - -  */
 
-const menuController2 = document.querySelector("#star-click");
-menuController2.addEventListener("click", function() {
-  document.querySelector(".star").classList.toggle("info-open");
+const starModal = document.querySelector("#star-click");
+const star = document.querySelector(".star");
+starModal.addEventListener("click", function() {
+  star.classList.toggle("info-open");
 });
 
-document.querySelector(".info-close").addEventListener("click", function() {
-  document.querySelector(".star").classList.remove("info-open");
+document.querySelector(".star-close").addEventListener("click", function() {
+  star.classList.remove("info-open");
 });
 
 /* - - - - - - - SHARK ASIDE - - - - - - - -  */
 
-const menuController3 = document.querySelector("#shark-click");
-menuController3.addEventListener("click", function() {
-  document.querySelector(".shark").classList.toggle("info-open");
+const sharkModal = document.querySelector("#shark-click");
+const shark = document.querySelector(".shark");
+sharkModal.addEventListener("click", function() {
+  shark.classList.toggle("info-open");
 });
 
-document.querySelector(".info-close").addEventListener("click", function() {
-  document.querySelector(".shark").classList.remove("info-open");
+document.querySelector(".shark-close").addEventListener("click", function() {
+  shark.classList.remove("info-open");
 });
 
 // /* - - - - - - - BLUE WHALE ASIDE - - - - - - - -  */
 
-const menuController4 = document.querySelector("#blue-whale-click");
-menuController4.addEventListener("click", function() {
-  document.querySelector(".blue-whale").classList.toggle("info-open");
+const blueModal = document.querySelector("#blue-whale-click");
+const blueWhale = document.querySelector(".blue-whale");
+blueModal.addEventListener("click", function() {
+  blueWhale.classList.toggle("info-open");
 });
 
-document.querySelector(".info-close").addEventListener("click", function() {
-  document.querySelector(".blue-whale").classList.remove("info-open");
+document.querySelector(".whale-close").addEventListener("click", function() {
+  blueWhale.classList.remove("info-open");
 });
 
 // /* - - - - - - - SQUID ASIDE - - - - - - - -  */
 
-const menuController5 = document.querySelector("#squid-click");
-menuController5.addEventListener("click", function() {
-  document.querySelector(".squid").classList.toggle("info-open");
+const squidModal = document.querySelector("#squid-click");
+const squid = document.querySelector(".squid");
+squidModal.addEventListener("click", function() {
+  squid.classList.toggle("info-open");
 });
 
-document.querySelector(".info-close").addEventListener("click", function() {
-  document.querySelector(".squid").classList.remove("info-open");
+document.querySelector(".squid-close").addEventListener("click", function() {
+  squid.classList.remove("info-open");
 });

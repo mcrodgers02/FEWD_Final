@@ -73,7 +73,6 @@ main {
   align-items: center;
   height: 250px;
   color: white;
-  border: 1px solid red;
 }
 
 @media (min-width: 540px) {
@@ -184,9 +183,11 @@ main {
   opacity: 1;
 }
 
-.clown-photo {
-  background: url("https://as2.ftcdn.net/jpg/03/16/44/65/500_F_316446573_jTwGJQWLOnRK71QXwKrEkYX8Cql97pQh.jpg");
-  background-size: cover;
+.clown-photo img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  overflow: hidden;
   background-position: center;
 }
 
@@ -221,9 +222,11 @@ main {
   opacity: 1;
 }
 
-.star-photo {
-  background: url("https://as2.ftcdn.net/jpg/02/13/70/69/500_F_213706998_hHBDkj9RY8lIjNn9cDgeOf8SdbDBtpFR.jpg");
-  background-size: cover;
+.star-photo img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  overflow: hidden;
   background-position: center;
 }
 
@@ -258,9 +261,11 @@ main {
   opacity: 1;
 }
 
-.shark-photo {
-  background: url("https://www.bostonmagazine.com/wp-content/uploads/sites/2/2019/05/Great-white-shark.jpg");
-  background-size: cover;
+.shark-photo img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  overflow: hidden;
   background-position: center;
 }
 
@@ -289,9 +294,11 @@ main {
   opacity: 1;
 }
 
-.blue-whale-photo {
-  background: url("https://as2.ftcdn.net/jpg/02/04/55/51/500_F_204555192_HJSMbvWq0YkhKKUeZngxXmpvGqCX5kEC.jpg");
-  background-size: cover;
+.blue-whale-photo img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  overflow: hidden;
   background-position: center;
 }
 
@@ -326,9 +333,11 @@ main {
   opacity: 1;
 }
 
-.squid-photo {
-  background: url("https://as1.ftcdn.net/jpg/02/19/61/88/500_F_219618860_9O01L4U7sTUuWSjjNt38wudML2jNmWFm.jpg");
-  background-size: cover;
+.squid-photo img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  overflow: hidden;
   background-position: center;
 }
 
@@ -374,27 +383,23 @@ main {
   margin: 0 20px 20px 20px;
 }
 
-.fish-photo {
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .info-open {
   transform: translateX(0%);
   opacity: 1;
 }
 
-.info-close {
+.clown-close,
+.star-close,
+.shark-close,
+.whale-close,
+.squid-close {
   background-color: rgba(0, 0, 0, 0);
   height: 15px;
   position: absolute;
   z-index: 20;
   margin: 10px;
   display: block;
+  cursor: pointer;
 }
 
 .info-close:hover {
