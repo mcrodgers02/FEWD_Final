@@ -71,7 +71,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 200px;
   color: white;
 }
 
@@ -101,13 +101,13 @@ main {
 }
 
 .hero-text h1 {
-  font-size: 7vw;
+  font-size: 10vw;
   text-align: center;
-  margin: -1vh auto;
+  margin: -0.5vh auto;
 }
 
 .hero-text p {
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: center;
 }
 
